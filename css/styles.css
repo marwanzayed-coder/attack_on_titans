@@ -1,0 +1,154 @@
+/* Start Global Rules */
+:root {
+  --main-color: #ff5722;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  font-family: "Cairo", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.navbar .container .logo {
+  font-size: 24px;
+}
+.navbar .container nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .container nav ul li a {
+  color: var(--main-color);
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+/* End Header */
+/* Start Landing */
+.landingPage {
+  background: url("../images/cover.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.landingPage .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #fff;
+}
+.landingPage .container div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.landingPage .container div h1 {
+  font-size: 35px;
+  color: var(--main-color);
+  letter-spacing: 1.7px;
+}
+.landingPage .container div p {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+/* End Landing */
+
+/* Start About */
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+.about p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+/* End About */
+
+/* Start Footer */
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+/* End Footer */
